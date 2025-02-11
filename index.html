@@ -26,7 +26,7 @@
             text-align: center;
             color: #333;
         }
-        .question, .personal-info {
+        .personal-info, .question {
             margin-bottom: 20px;
         }
         label {
@@ -38,7 +38,7 @@
             margin-right: 10px;
         }
         input[type="text"] {
-            width: calc(100% - 20px);
+            width: calc(100% - 22px); /* Adjust input width */
             padding: 5px;
         }
         button {
@@ -69,15 +69,6 @@
         <h1>Questionnaire de dépistage de la Fibromyalgie</h1>
         <p>Complétez ce questionnaire en répondant par oui ou par non à chacune des questions suivantes:</p>
         <form id="fibroForm">
-            <div class="personal-info">
-                <label for="firstName">Prénom:</label>
-                <input type="text" id="firstName" name="firstName" required>
-                <label for="lastName">Nom:</label>
-                <input type="text" id="lastName" name="lastName" required>
-                <label>Date du jour:</label>
-                <input type="text" id="currentDate" readonly>
-            </div>
-            <!-- Dynamic list of questions -->
             <div class="question">
                 <p>Mes douleurs sont localisées partout dans tout mon corps.</p>
                 <label><input type="radio" name="q1" value="1"> Oui</label>
@@ -108,6 +99,14 @@
                 <label><input type="radio" name="q6" value="1"> Oui</label>
                 <label><input type="radio" name="q6" value="0"> Non</label>
             </div>
+            <div class="personal-info">
+                <label for="firstName">Prénom:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Nom:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label>Date du jour:</label>
+                <input type="text" id="currentDate" readonly>
+            </div>
             <button type="button" onclick="submitForm()">Soumettre</button>
             <button type="button" onclick="window.print()">Imprimer</button>
         </form>
@@ -130,4 +129,5 @@
     </script>
 </body>
 </html>
+
 
