@@ -63,13 +63,36 @@
         <h1>Questionnaire de dépistage de la Fibromyalgie</h1>
         <p>Complétez ce questionnaire en répondant par oui ou par non à chacune des questions suivantes:</p>
         <form id="fibroForm">
-            <!-- Questions here -->
             <div class="question">
                 <p>Mes douleurs sont localisées partout dans tout mon corps.</p>
                 <label><input type="radio" name="q1" value="1"> Oui</label>
                 <label><input type="radio" name="q1" value="0"> Non</label>
             </div>
-            <!-- Other questions follow -->
+            <div class="question">
+                <p>Mes douleurs s’accompagnent d’une fatigue générale permanente.</p>
+                <label><input type="radio" name="q2" value="1"> Oui</label>
+                <label><input type="radio" name="q2" value="0"> Non</label>
+            </div>
+            <div class="question">
+                <p>Mes douleurs sont comme des brûlures, des décharges électriques ou des crampes.</p>
+                <label><input type="radio" name="q3" value="1"> Oui</label>
+                <label><input type="radio" name="q3" value="0"> Non</label>
+            </div>
+            <div class="question">
+                <p>Mes douleurs s’accompagnent d’autres sensations anormales, comme des fourmillements, des picotements ou des sensations d’engourdissements dans tout le corps.</p>
+                <label><input type="radio" name="q4" value="1"> Oui</label>
+                <label><input type="radio" name="q4" value="0"> Non</label>
+            </div>
+            <div class="question">
+                <p>Mes douleurs s’accompagnent d’autres problèmes de santé comme des problèmes digestifs, des problèmes urinaires, des maux de tête ou des impatiences dans les jambes.</p>
+                <label><input type="radio" name="q5" value="1"> Oui</label>
+                <label><input type="radio" name="q5" value="0"> Non</label>
+            </div>
+            <div class="question">
+                <p>Mes douleurs ont un retentissement important dans ma vie : en particulier, sur mon sommeil, ma capacité à me concentrer avec une impression de fonctionner au ralenti.</p>
+                <label><input type="radio" name="q6" value="1"> Oui</label>
+                <label><input type="radio" name="q6" value="0"> Non</label>
+            </div>
             <button type="button" onclick="submitForm()">Soumettre</button>
             <button type="button" onclick="window.print()">Imprimer</button>
         </form>
